@@ -5,6 +5,7 @@ let degry = document.querySelector(".degry h1");
 let city = document.querySelector(".city h1");
 let humidity = document.querySelector(".humidity");
 let Wind = document.querySelector(".Wind");
+let audio = document.getElementById("audio");
 
 let meteo ={};
 
@@ -21,16 +22,28 @@ btn.addEventListener("click", function(){
                 if(meteo.name){
                     if(meteo.weather[0].main == "Clear"){
                         img.src = "images/clear.png";
+                        audio.src = "audio/clear.m4a";
+                        audio.play();
                     }else if(meteo.weather[0].main == "Clouds"){
                         img.src = "images/clouds.png";
+                        audio.src = "audio/clear.m4a";
+                        audio.play();
                     }else if(meteo.weather[0].main == "Drizzle"){
                         img.src = "images/drizzle.png";
+                        audio.src = "audio/drizzle.m4a";
+                        audio.play();
                     }else if(meteo.weather[0].main == "Mist"){
                         img.src = "images/mist.png";
+                        audio.src = "audio/clear.m4a";
+                        audio.play();
                     }else if(meteo.weather[0].main == "Rain"){
                         img.src = "images/rain.png";
+                        audio.src = "audio/rain.m4a";
+                        audio.play();
                     }else if(meteo.weather[0].main == "Snow"){
                         img.src = "images/snow.png";
+                        audio.src = "audio/snow.m4a";
+                        audio.play();
                     }
     
                     degry.innerHTML = `${meteo.main.temp} °c`;
