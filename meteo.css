@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #51c4be;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 40%;
+    height: 90%;
+    background-color: #80808056;
+    border-radius: 50px;
+}
+
+header, .img, .degry, .city, .footer, header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 20%;
+}
+
+input{
+    width: 70%;
+    height: 40%;
+    border-radius: 20px;
+    border: none;
+    padding-left: 20px;
+}
+
+input:focus{
+    outline-color: #51c4be;
+}
+
+header div{
+    width: 10%;
+    height: 40%;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+header div:hover{
+    box-shadow: 1px 1px 15px #eee;
+}
+
+header img{
+    width: 20px;
+    height: 20px;
+}
+
+.img{
+    width: 100%;
+    height: 40%;
+}
+
+.degry{
+    width: 100%;
+    height: 10%;
+}
+
+.city{
+    width: 100%;
+    height: 10%;
+}
+
+.footer{
+    width: 100%;
+    height: 20%;
+    justify-content: space-around;
+}
+
+.footer img{
+    width: 40px;
+}
+
+.meteo{
+    display: flex;
+}
+
+.meteo .m1 {
+    margin-left: 10px;
+}
+
+
+
